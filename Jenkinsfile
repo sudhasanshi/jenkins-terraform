@@ -19,7 +19,7 @@ stages {
             sh 'terraform apply --auto-approve'
         }
     }
-     stage('terraform-apply') {
+     stage('terraform-destroy') {
         steps{
             sh 'terraform destroy --auto-approve'
         }
