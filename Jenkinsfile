@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent terraform:1.0
 tools {
   terraform 'terraform11'
 }
