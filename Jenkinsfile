@@ -1,9 +1,7 @@
 pipeline {
-    agent {docker { image 'terraform:1.0'}
+    agent { 
+	   docker { image 'terraform:1.0'}
           }
-tools {
-  terraform 'terraform11'
-}
 stages {
     stage('git-checkout') {
         steps{
